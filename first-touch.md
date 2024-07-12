@@ -28,7 +28,7 @@ cd dex
 
 ## 2. Run the Dex server in Docker
 
-This step uses the dev server configuration in `./examples/config-dev.yaml` in the cloned repository. Since the dev configuration wants to store the SQLite database in `/examples` in the container we mount the host `/tmp` directory to `/examples` in the container because the container does not include that directory:
+This step uses the dev server configuration in `./examples/config-dev.yaml` in the cloned Dex repository. Since the dev configuration wants to store the SQLite database in `/examples` in the container we mount the host `/tmp` directory to `/examples` in the container because the container does not include that directory:
 ```
 docker run\
   --name dex\
@@ -104,7 +104,7 @@ After clicking `Log in with Example` the example client will display the mandato
 ![Consent](resources/grant-access.jpg)
 
 
-When you then click _Grant Access_, the OIDC Authorization flow is completed and the example client simply displays a brower page presenting the OIDC information obtained from the Dex Mock connector:
+When you then click _Grant Access_, the OIDC Authorization flow is completed and the example client simply displays a browser page presenting the OIDC information obtained from the Dex Mock connector:
 ```
 ID Token:
 
